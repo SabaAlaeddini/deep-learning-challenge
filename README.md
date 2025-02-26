@@ -70,17 +70,23 @@ The model attained an accuracy of approximately 72.40%, which did not achieve th
 
 - Optimization 1: Added a Hidden Layer and Increased Neurons
 Added a third hidden layer, making the network deeper with 120, 80, and 30 neurons to test whether a deeper network would improve accuracy.
+
 ![alt text](Images/model_optimization1.png)
+
 
 - Optimization 2: Increased Neurons in the First Hidden Layer and the Number of Epochs
 1. Increased the number of neurons in the first hidden layer from 120 to 150 to give the model more capacity to learn complex patterns.
 2. Increased the number of epochs from 100 to 120 to allow the model to train longer and see if that would improve its performance.
+
 ![alt text](Images/model_optimization2.png)
+
 
 - Optimization 3: Increased Neurons in the Second Hidden Layer and Introduced Early Stopping
 1. Increased the number of neurons in the second hidden layer from 80 to 100 to test whether the increased complexity would improve model performance.
 2. Added EarlyStopping to stop training the model once validation loss does not improve for five epochs (patience=5), an attempt to prevent overfitting.
+
 ![alt text](Images/model_optimization3.png)
+
 
 # Summary & Recommendation
 Despite various optimization strategies, the model accuracy remained between 72-73%, falling short of the 75% target. This suggests:
